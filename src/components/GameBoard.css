@@ -1,0 +1,46 @@
+.game-board {
+  width: 100%;
+  overflow-x: auto;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.jeopardy-board {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 8px;
+  min-width: 800px;
+}
+
+.category-header {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+  padding: 20px 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  word-wrap: break-word;
+  max-width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.jeopardy-board td {
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .category-header {
+    font-size: 0.9rem;
+    padding: 15px 8px;
+    height: 80px;
+  }
+}
+
